@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "appearanceTime": 2.0,
+      "appearCount": 5.0,
+      "intervals": 0.2,
+      "spwanKind": "basic",
+      "spwanPosX": 0.0,
+      "spwanPosY": 7.0,
+      "stopSpawnTime": 240.0,
+      "stopFlag": 0
+    },
+    {
+      "appearanceTime": 3.0,
+      "appearCount": 2.0,
+      "intervals": 1,
+      "spwanKind": "selfDestruct",
+      "spwanPosX": 0.0,
+      "spwanPosY": 7.0,
+      "stopSpawnTime": 240.0,
+      "stopFlag": 0
+    },
+    {
+      "appearanceTime": 3.5,
+      "appearCount": 2.0,
+      "intervals": 1.5,
+      "spwanKind": "patternLtoR",
+      "spwanPosX": -5.0,
+      "spwanPosY": 5.0,
+      "stopSpawnTime": 15,
+      "stopFlag": 0
+    },
+    {
+      "appearanceTime": 5,
+      "appearCount": 2.0,
+      "intervals": 0,
+      "spwanKind": "patternMoveBack",
+      "spwanPosX": 0.0,
+      "spwanPosY": 5.0,
+      "stopSpawnTime": 20,
+      "stopFlag": 0
+    }
+
+  ]
+}
