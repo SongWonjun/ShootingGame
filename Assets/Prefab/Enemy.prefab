@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 7035568383488729733}
   - component: {fileID: 7035568383488729729}
   - component: {fileID: 7035568383488729734}
-  - component: {fileID: 400530224398666035}
-  - component: {fileID: 1065963084443887958}
   - component: {fileID: 8660805959927900394}
+  - component: {fileID: 7515331903795686221}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -129,35 +128,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.52, y: 0.63}
   m_EdgeRadius: 0
---- !u!114 &400530224398666035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7035568383488729754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1a6510d42228a4c8bae732b9fca389, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDownSpeed: 6
---- !u!114 &1065963084443887958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7035568383488729754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb0c52517a366a4286c6249807b3b35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHp: 3
-  destroyScorePoint: 10
-  explosion: {fileID: 6026378326157493637, guid: caa07882b4043204ea12b3c827c6d2d8,
-    type: 3}
 --- !u!50 &8660805959927900394
 Rigidbody2D:
   serializedVersion: 4
@@ -179,3 +149,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7515331903795686221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7035568383488729754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd7153734d61fc34394528d86776133d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 6026378326157493637, guid: caa07882b4043204ea12b3c827c6d2d8,
+    type: 3}

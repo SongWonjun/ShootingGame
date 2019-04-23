@@ -42,8 +42,7 @@ GameObject:
   - component: {fileID: 1247242482404261805}
   - component: {fileID: 4707030826480743345}
   - component: {fileID: 5003122770857922358}
-  - component: {fileID: 3119045208833933305}
-  - component: {fileID: 7314440239758796979}
+  - component: {fileID: 5075800390808595797}
   m_Layer: 0
   m_Name: PatternEnemyMoveBack
   m_TagString: Untagged
@@ -161,7 +160,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3119045208833933305
+--- !u!114 &5075800390808595797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,19 +169,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6612456916765323345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3f789681ad4bb148901c067ca802f19, type: 3}
+  m_Script: {fileID: 11500000, guid: 907c660dadeab484381b8bd8a59be434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 6026378326157493637, guid: caa07882b4043204ea12b3c827c6d2d8,
+    type: 3}
   missile: {fileID: 3246108094540600638, guid: 48aa3b5497238fb468886cffc4fb5a35, type: 3}
---- !u!114 &7314440239758796979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6612456916765323345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fef7cfdd511ef447b7c88776eca9e48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

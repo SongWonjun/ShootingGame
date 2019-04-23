@@ -27,10 +27,10 @@ public class EnemyTwo : Enemies
         Vector2 moveDir = Vector2.down * Time.deltaTime * moveSpeed;
         transform.position = curPos + moveDir;
 
-        if (MoveShooter.instance.gameObject.activeSelf)
+        if (Player.instance.gameObject.activeSelf)
         {
             curPos = transform.position;
-            moveDir = MoveShooter.instance.transform.position - transform.position;
+            moveDir = Player.instance.transform.position - transform.position;
             moveDir.Normalize();
             transform.position = curPos + moveDir * Time.deltaTime * moveSpeed;
         }
@@ -53,7 +53,7 @@ public class EnemyTwo : Enemies
     private void EnemyDestroy()
     {
         Destroy(gameObject);
-        SpwanItem.instance.SpwanItems(transform);
+        ItemManager.instance.SpwanItems(transform);
         GameManagers.instance.SetScore(destroyScorePoint);
         UiManager.instance.UpdateScoreText();
         Instantiate(explosion, transform.position, transform.rotation);

@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2330951450533130202}
   - component: {fileID: 2330951450533130201}
-  - component: {fileID: 4791896637980458199}
   - component: {fileID: 2886986632519444871}
   - component: {fileID: 5674673617586350584}
-  - component: {fileID: 8699449230971087125}
+  - component: {fileID: 5183266983088469136}
   m_Layer: 0
   m_Name: EnmeyMissile
   m_TagString: Missile
@@ -83,18 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4791896637980458199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2330951450533130200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76482de192c6624fbb9a17cbe38dcdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2886986632519444871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,7 +129,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8699449230971087125
+--- !u!114 &5183266983088469136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,6 +138,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2330951450533130200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed39fb3ea3a837d4abda5d3c3017ce5e, type: 3}
+  m_Script: {fileID: 11500000, guid: e38dea79de3c8364d979ae55f2a04976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

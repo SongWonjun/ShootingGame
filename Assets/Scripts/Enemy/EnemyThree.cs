@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyThree : Enemies
 {
     public Transform[] wayPoints; // way point 
+    public GameObject missile;
     public GameObject explosion;
     private int wayPointsIndex;
    
@@ -18,6 +19,14 @@ public class EnemyThree : Enemies
         GameObject wayPoint = GameObject.FindGameObjectWithTag("WayPoints"); // WayPoints 태그 갖고 있는 오브젝트 찾기
         wayPoints = wayPoint.GetComponentsInChildren<Transform>(); // 자식 오브젝트
         wayPointsIndex = 0;
+
+        Invoke("Fire", 1.0f);
+    }
+
+    // fire
+    private void Fire()
+    {
+        Instantiate(missile, transform.position, transform.rotation);
     }
 
     // Update is called once per frame
@@ -54,7 +63,7 @@ public class EnemyThree : Enemies
     private void EnemyDestroy()
     {
         Destroy(gameObject);
-        SpwanItem.instance.SpwanItems(transform);
+        ItemManager.instance.SpwanItems(transform);
         GameManagers.instance.SetScore(destroyScorePoint);
         UiManager.instance.UpdateScoreText();
         Instantiate(explosion, transform.position, transform.rotation);

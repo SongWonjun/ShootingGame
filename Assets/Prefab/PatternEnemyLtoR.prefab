@@ -10,11 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4004103141641244860}
   - component: {fileID: 4004103141641244861}
-  - component: {fileID: 5945936142852544299}
-  - component: {fileID: 7371524122816070501}
   - component: {fileID: 931010711579218083}
   - component: {fileID: 3631575301171246604}
-  - component: {fileID: 2912165712056647261}
+  - component: {fileID: 6690102512609642345}
   m_Layer: 0
   m_Name: PatternEnemyLtoR
   m_TagString: Enemy
@@ -85,35 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5945936142852544299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4004103141641244862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664a218636610d4428ab26e1d0c72a31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wayPoints:
-  - {fileID: 2891820185850159541, guid: 165c36f0b5448884c81b3a231c033e5a, type: 3}
-  - {fileID: 4525034023962831033, guid: ac9e3162c07de9545884d83166f2bc79, type: 3}
-  - {fileID: 1737897480358654678, guid: 8f77f52adeae51944a2f2827d9775bc8, type: 3}
-  moveSpeed: 1
---- !u!114 &7371524122816070501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4004103141641244862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fef7cfdd511ef447b7c88776eca9e48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &931010711579218083
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161,7 +130,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2912165712056647261
+--- !u!114 &6690102512609642345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,11 +139,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4004103141641244862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04bcfa2cc5a11c24098367cb6d263640, type: 3}
+  m_Script: {fileID: 11500000, guid: a98a54bdc8020994d971347967f9bae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootPos: {fileID: 0}
+  wayPoints:
+  - {fileID: 2891820185850159541, guid: 165c36f0b5448884c81b3a231c033e5a, type: 3}
+  - {fileID: 4525034023962831033, guid: ac9e3162c07de9545884d83166f2bc79, type: 3}
+  - {fileID: 1737897480358654678, guid: 8f77f52adeae51944a2f2827d9775bc8, type: 3}
   missile: {fileID: 2330951450533130200, guid: d3b497a16d97c1244b6bfbd937f403fb, type: 3}
+  explosion: {fileID: 6026378326157493637, guid: caa07882b4043204ea12b3c827c6d2d8,
+    type: 3}
 --- !u!1 &7692118839967690044
 GameObject:
   m_ObjectHideFlags: 0

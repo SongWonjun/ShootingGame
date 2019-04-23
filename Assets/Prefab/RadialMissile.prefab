@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 2897301286761389800}
   - component: {fileID: 5350355742463822300}
   - component: {fileID: 7390837323924488803}
-  - component: {fileID: 75288904031787994}
-  - component: {fileID: 4073879924129555271}
+  - component: {fileID: 8563867996436497087}
   m_Layer: 0
   m_Name: RadialMissile
   m_TagString: Missile
@@ -130,7 +129,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &75288904031787994
+--- !u!114 &8563867996436497087
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,19 +138,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2897301286761389801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf165d6ea4521914aba670a5d6e4d689, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a754115b27685349b9372d05ff01009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 13
---- !u!114 &4073879924129555271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2897301286761389801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e31a584ba43ce54893703bcc901bd9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  moveSpeed: 5

@@ -45,7 +45,7 @@ public class EnemyOne : Enemies
     private void EnemyDestroy()
     {
         Destroy(gameObject);
-        SpwanItem.instance.SpwanItems(transform);
+        ItemManager.instance.SpwanItems(transform);
         GameManagers.instance.SetScore(destroyScorePoint);
         UiManager.instance.UpdateScoreText();
         Instantiate(explosion, transform.position, transform.rotation);

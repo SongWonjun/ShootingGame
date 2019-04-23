@@ -11,8 +11,9 @@ public class Player : MonoBehaviour
     private Vector2 minBgPos;
     private Vector2 maxBgPos;
    
-    public EnemyWeapon[] myWeapon;
-    private EnemyWeapon curWeapon;
+    public PlayerWeapon[] myWeapon;
+    public PlayerSpecialWeapon specialWeapon;
+    private PlayerWeapon curWeapon;
 
     private void Awake()
     {

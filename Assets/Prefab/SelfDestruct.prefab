@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 7035568383488729733}
   - component: {fileID: 7035568383488729729}
   - component: {fileID: 7035568383488729734}
-  - component: {fileID: 807188539497088918}
-  - component: {fileID: 379936770476307330}
   - component: {fileID: 3133101071035588849}
+  - component: {fileID: 2132059542074010117}
   m_Layer: 0
   m_Name: SelfDestruct
   m_TagString: Enemy
@@ -129,35 +128,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.52, y: 0.63}
   m_EdgeRadius: 0
---- !u!114 &807188539497088918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7035568383488729754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b80e48b6db2200418560f441db83601, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5.5
---- !u!114 &379936770476307330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7035568383488729754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb0c52517a366a4286c6249807b3b35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHp: 2
-  destroyScorePoint: 15
-  explosion: {fileID: 6026378326157493637, guid: caa07882b4043204ea12b3c827c6d2d8,
-    type: 3}
 --- !u!50 &3133101071035588849
 Rigidbody2D:
   serializedVersion: 4
@@ -179,3 +149,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2132059542074010117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7035568383488729754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9dd1474e24e39c48ae7140a3cd68c78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 6026378326157493637, guid: caa07882b4043204ea12b3c827c6d2d8,
+    type: 3}

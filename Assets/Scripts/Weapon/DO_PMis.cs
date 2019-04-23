@@ -24,4 +24,12 @@ public class DO_PMis : MonoBehaviour
 
         transform.position = curPos + movePos;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "UpDestroyZone")
+            Destroy(gameObject);
+        if (collision.gameObject.tag == "Enemy")
+            Destroy(gameObject);
+    }
 }

@@ -21,11 +21,11 @@ public class DO_EGreenMis : MonoBehaviour
 
     void Update()
     {
-        Shoot();
+        Do();
     }
 
     // 생성되고 0.5초 후에 미사일 1발 슈터에게 발사
-    void Shoot()
+    void Do()
     {
         curPos = transform.position;
         movePos.Normalize();
